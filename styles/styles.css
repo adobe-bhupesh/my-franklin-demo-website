@@ -18,6 +18,7 @@
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: magenta;
+  --white-color: white;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -51,6 +52,11 @@
     --heading-font-size-s: 24px;
     --heading-font-size-xs: 22px;
   }
+}
+
+* {
+  
+  box-sizing: border-box;
 }
 
 body {
@@ -240,4 +246,11 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .new-section {
+  width: 100%;
+  background-color: var(--highlight-background-color);
+  margin-bottom: 10px;
+  color: var(--white-color);
 }
