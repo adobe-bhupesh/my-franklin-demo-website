@@ -1,0 +1,16 @@
+###
+GET https://main--my-franklin-demo-website--adobe-bhupesh.hlx.page/feedback-form.json HTTP/1.1
+
+###
+POST https://main--my-franklin-demo-website--adobe-bhupesh.hlx.page/feedback-form HTTP/1.1
+content-type: application/json
+
+{
+ "data": { 
+    "name": "somebody2", 
+    "emailId": "test1@adobe.com", 
+    "overallExperience": "Bad", 
+    "comments": "This is the test data..." 
+   }
+}
+

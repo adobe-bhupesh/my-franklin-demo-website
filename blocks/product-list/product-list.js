@@ -20,7 +20,6 @@ const loadData = async (offset, limit) => {
 };
 
 const generateProductList = (productData) => {
-    // const $list = document.createElement('ul');
     productData.forEach(item => {
         const $li = document.createElement('li');
         $li.classList.add('product-item-wrapper');
