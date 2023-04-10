@@ -19,6 +19,15 @@ export default async function decorate(block) {
     const footer = document.createElement('div');
     footer.innerHTML = html;
 
+    const tncResp = await fetch(`/tnc.plain.html`);
+    if (tncResp.ok) {
+      const tncHtml = await tncResp.text();
+      const $tncEl = document.createElement('div');
+      $tncEl.classList.add('tnc');
+      $tncEl.innerHTML = tncHtml;
+      footer.append($tncEl);
+    }
+
     decorateIcons(footer);
     block.append(footer);
   }
